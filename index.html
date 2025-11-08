@@ -1,74 +1,273 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/style/style.css">
-        <script src="/script/script.js" defer></script>
-        <title>Undiana Fadilah</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="index__container">
-                <!--  -->
-                <div class="box">
-                    <!--  -->
-                    <div class="box__header">
-                        <a href="/about.html">About</a>
-                        <a href="/portofolio.html">Portofolio</a>
-                        <a href="/contact.html">Contact</a>
-                    </div>
-                    <!--  -->
-                    <div class="box__profile">
-                        <div class="box__profile__image">
-                            <img src="/images/profile.jpeg" alt="my_profile">
-                        </div>
-                        <!--  -->
-                        <div class="box__profile__description">
-                            <h6>HI THERE I'M</h6>
-                            <h4>UNDIANA FADILAH</h4>
-                            <p>A <strong>Fullstack Web Developer</strong>
-                                about designing a web-based program and
-                                system
-                                data
-                                with the experience I have in web
-                                developers</p>
-                            <div class="icon__theme" id="theme">
-                                <span id="light">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24" stroke-width="1.5"
-                                        stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-                                    </svg>
-                                </span>
-                                <span id="dark">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24" stroke-width="1.5"
-                                        stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+<html lang="en">
 
-                </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kangyann | Personal Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Personal, Webpage, Portofolio,Landing Page, Kangyann, Kangyann.my.id" />
+  <meta name="description" content="Easy To Make Personal or Portofolio Website" />
+  <link rel="stylesheet" href="assets/style/style.css" />
+  <link rel="stylesheet" href="assets/style/maintenance.css" />
+  <link rel="stylesheet" href="assets/style/@screen.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="shortcut icon" href="https://svgshare.com/i/jmv.svg" type="image/x-icon" />
+</head>
 
+<body>
+  <div class="d-flex justify-content-center align-items-center vh-100 position-relative light"
+    style="transition: 0.3s all ease-in">
+    <div class="h-100 position-fixed left-section overflow-hidden z-1 bar light"
+      style="top: 0; left: 0; transition: 0.6s all ease-in-out">
+      <div class="m-lg-3 m-md-3 m-sm-3 m-2">
+        <img src="https://svgshare.com/i/jmv.svg" alt="Icon Logo" width="48"
+          class="d-none d-md-block d-sm-block d-lg-block" />
+        <div class="d-flex flex-column gap-4 mt-5 m-2">
+          <div class="d-none d-lg-flex d-sm-flex d-md-flex align-items-center gap-3 p-2 left-icon active"
+            style="white-space: nowrap; cursor: pointer" id="ChangePage" data-page="home">
+            <i class="fa-solid fa-home fa-xl" style="color: var(--primary-light)"></i>
+            <span class="ms-3" style="font-family: 'Poppins'; color: var(--primary-light)">Home</span>
+          </div>
+          <div class="d-none d-lg-flex d-sm-flex d-md-flex align-items-center gap-3 p-2 left-icon"
+            style="white-space: nowrap; cursor: pointer" id="ChangePage" data-page="about">
+            <i class="fa-solid fa-user fa-xl" style="color: var(--primary-light)"></i>
+            <span class="ms-3" style="font-family: 'Poppins'; color: var(--primary-light)">About Me</span>
+          </div>
+
+          <div class="d-none d-lg-flex d-sm-flex d-md-flex align-items-center gap-3 p-2 left-icon"
+            style="white-space: nowrap; cursor: pointer" id="ChangePage" data-page="project">
+            <i class="fa-solid fa-umbrella fa-lg" style="color: var(--primary-light)"></i>
+            <span class="ms-3" style="font-family: 'Poppins'; color: var(--primary-light)">Projects</span>
+          </div>
+          <div class="d-none d-lg-flex d-sm-flex d-md-flex align-items-center gap-3 p-2 left-icon"
+            style="white-space: nowrap; cursor: pointer" id="ChangePage" data-page="certificate">
+            <i class="fa-solid fa-certificate fa-lg" style="color: var(--primary-light)"></i>
+            <span class="ms-3" style="font-family: 'Poppins'; color: var(--primary-light)">Certificate</span>
+          </div>
+          <a href="/xinstacode.html" style="text-decoration: none;">
+          <div class="d-none d-lg-flex d-sm-flex d-md-flex align-items-center gap-3 p-2 left-icon"
+            style="white-space: nowrap; cursor: pointer">
+            <i class="fa-solid fa-code fa-lg" style="color: var(--primary-light)"></i>
+              <span class="ms-3" style="font-family: 'Poppins'; color: var(--primary-light)">X InstaCode</span>
             </div>
-            <footer>
-                <div class="footer__box">
-                    <span>
-                        Made With ♥️ <a
-                            href="https://instagram.com/kangyann.dev ">kangyann.dev</a></span>
-                    <span>Copyright &copy; 2025. All Right Reserved.</span>
+          </a>
+          <div class="position-absolute mb-3 mode" style="bottom: 10px">
+            <div class="d-flex">
+              <i class="fa-solid fa-moon fa-lg mode_icon px-3 py-3 rounded-3" data-page="dark" id="dark" style="
+                    color: var(--primary-light);
+                    cursor: pointer;
+                    display: block;
+                  "></i>
+              <i class="fa-solid fa-sun fa-lg mode_icon px-3 py-3 rounded-3" data-page="light" id="light" style="
+                    color: var(--secondary-light);
+                    cursor: pointer;
+                    display: none;
+                  "></i>
+              <i class="fa-solid fa-bars fa-xl d-lg-none d-sm-none d-md-none d-block mx-4 me-1 px-2 py-3 rounded-3"
+                id="menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"
+                style="cursor: pointer"></i>
+            </div>
+            <div class="offcanvas offcanvas-top d-lg-none d-md-none d-sm-none"
+              style="background-color: var(--background-light)" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTopLabel" style="color: var(--primary-light)">
+                  Menu
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="d-flex align-items-center gap-3 p-2 left-icon" style="white-space: nowrap; cursor: pointer"
+                  id="ChangePage" data-page="home">
+                  <i class="fa-solid fa-home fa-xl" style="color: var(--primary-light)"></i>
+                  <span class="ms-3" style="
+                        font-family: 'Poppins';
+                        color: var(--primary-light);
+                      ">Home</span>
                 </div>
-            </footer>
+                <div class="d-flex align-items-center gap-3 p-2 left-icon" style="white-space: nowrap; cursor: pointer"
+                  id="ChangePage" data-page="about">
+                  <i class="fa-solid fa-user fa-xl" style="color: var(--primary-light)"></i>
+                  <span class="ms-3" style="
+                        font-family: 'Poppins';
+                        color: var(--primary-light);
+                      ">About Me</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-3 p-2 left-icon" style="white-space: nowrap; cursor: pointer"
+                  id="ChangePage" data-page="project">
+                  <i class="fa-solid fa-umbrella fa-lg" style="color: var(--primary-light)"></i>
+                  <span class="ms-3" style="
+                        font-family: 'Poppins';
+                        color: var(--primary-light);
+                      ">Projects</span>
+                </div>
+                <div class="d-flex align-items-center gap-3 p-2 left-icon" style="white-space: nowrap; cursor: pointer"
+                  id="ChangePage" data-page="certificate">
+                  <i class="fa-solid fa-certificate fa-lg" style="color: var(--primary-light)"></i>
+                  <span class="ms-3" style="
+                        font-family: 'Poppins';
+                        color: var(--primary-light);
+                      ">Certificate</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </body>
+      </div>
+    </div>
+    <!--  -->
+    <div class="ListPage" id="home">
+      <div class="d-flex justify-content-center gap-3 container container-main">
+        <div class="">
+          <img src="assets/images/profile.jpg" alt="Profiles Picture" width="200" height="200" class="rounded-circle"
+            style="box-shadow: 2px 1px 12px 4px var(--black-opacity);" />
+        </div>
+        <div class="col-xl-4 col-lg-5 col-sm-6">
+          <span class="text-dark" style="font-family: 'Titillium Web'; font-weight: bold">HI THERE ! I'M</span>
+          <h2 style="
+                font-family: 'Poppins';
+                color: var(--primary-light);
+                letter-spacing: 2px;
+              " class="my-2">
+            KANGYANN
+          </h2>
+          <span class="text-dark" style="font-family: 'Poppins', sans-serif">A
+            <a href="#" style="color: var(--primary-light); font-weight: bold" class="text-decoration-none">Fullstack Developer</a>
+            about designing a web-based program and system data with the experience I have in
+            web developers</span>
+          <div class="mt-3">
+            <a href="" class="text-decoration-none py-2 px-4 rounded-3 text-white-50 me-4 resume" data-page="about"
+              style="
+                  font-family: 'Poppins';
+                  font-size: 14px;
+                  font-weight: 200;
+                  letter-spacing: 1px;
+                  background-color: var(--primary-light);
+                ">Resume</a>
+            <i class="fa-brands fa-instagram fa-xl" style="cursor: pointer; color: var(--primary-light)"></i>
+            <i class="fa-brands fa-github fa-xl mx-2" style="cursor: pointer; color: var(--primary-light)"></i>
+            <i class="fa-brands fa-linkedin fa-xl" style="cursor: pointer; color: var(--primary-light)"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ListPage" id="about" style="display: none">
+      <div class="d-flex justify-content-center vh-100 align-items-center">
+        <div class="container position-relative">
+          <div class="d-flex justify-content-center gap-5 mt-5">
+            <div class="row">
+              <div class="text-center col-lg-6 col-md-6">
+                <img src="assets/images/profile.jpg" alt="Profiles Picture" width="180" class="rounded-4 mb-2 mt-5" />
+                <h2 style="
+                      color: var(--primary-light);
+                      font-family: 'Titillium Web';
+                      font-weight: 600;
+                      letter-spacing: 1px;
+                    ">
+                  Kangyann
+                </h2>
+                <p class="text-dark" style="font-family: 'Poppins'; letter-spacing: 1px">
+                  Web Developer & Data Analytics
+                </p>
+              </div>
+              <div class="head col-lg-5 col-md-6 col-12">
+                <h2 style="
+                      color: var(--primary-light);
+                      font-family: 'Titillium Web';
+                      font-weight: bold;
+                      letter-spacing: 1px;
+                    ">
+                  About Me
+                </h2>
+                <span class="text-dark" style="font-family: 'Poppins'">I'm from Kuningan City ,Most People Call Me
+                  Dian, This
+                  Programs Just my
+                  <span style="color: var(--primary-light); font-weight: bold">Hobby</span>
+                  and my
+                  <span style="color: var(--primary-light); font-weight: bold">Future</span>.</span>
+                <hr />
+                <table class="text-dark">
+                  <tr style="font-family: 'Poppins'">
+                    <td style="width: 100px">NAME</td>
+                    <td>: Dian</td>
+                  </tr>
+                  <tr style="font-family: 'Poppins'">
+                    <td style="width: 100px">PHONE</td>
+                    <td>: +(62) 83 829 055 059</td>
+                  </tr>
+                  <tr style="font-family: 'Poppins'">
+                    <td style="width: 100px">ADDRESS</td>
+                    <td>: Kuningan, West Java</td>
+                  </tr>
+                  <tr style="font-family: 'Poppins'">
+                    <td style="width: 100px">WEBSITE</td>
+                    <td>
+                      :
+                      <a href="https://kangyann.my.id/"
+                        class="text-decoration-none text-dark">https://kangyann.my.id/</a>
+                    </td>
+                  </tr>
+                  <tr style="font-family: 'Poppins'">
+                    <td style="width: 100px">E-MAIL</td>
+                    <td>: Kangyann727@gmail.com</td>
+                  </tr>
+                </table>
+                <div class="my-3 message">
+                  <a href="https://wa.me/6283829055059?text="
+                    class="py-2 px-4 rounded-3 text-decoration-none text-white-50"
+                    style="background-color: var(--primary-light)">Message Now !</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ListPage" id="project" style="display: none">
+      <div class="d-flex align-items-center justify-content-center vh-100">
+        <div class="comingsoon">
+          <h2 style="font-family: 'Titillium Web'; font-weight: 600">
+            <span>C</span>
+            <span>O</span>
+            <span>M</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+            <span>S</span>
+            <span>O</span>
+            <span>O</span>
+            <span>N</span>
+          </h2>
+          <span style="font-family: 'Poppins'">by Kangyann's --> @kangyann.tsx</span>
+        </div>
+      </div>
+    </div>
+    <div class="ListPage" id="certificate" style="display: none;">
+      <div class="d-flex justify-content-center align-items-center gap-5 container">
+        <i class="fa-solid fa-arrow-left fa-2xl" id="Previous" style="color: var(--primary-light); cursor: pointer;"></i>
+        <div class="" id="pagesImage" style="display: block;">
+          <img src="assets/images/certificate.PNG" alt="Certificate Completed" >
+          <div class="description text-center mt-2 text-dark" style="font-family: 'Titillium Web';">
+            <p style="font-size: 2rem; font-weight: bold;">VSGA - Junior Web Developer</p>
+            <span style="font-size: 1rem; ">8 - 19 Mei 2023, BPPTIK KOMINFO</span>
+          </div>
+        </div>
+        <div class="" id="pagesImage" style="display: none;">
+          <img src="assets/images/certificate.PNG" alt="Certificate Completed" >
+          <div class="description text-center mt-2 text-dark" style="font-family: 'Titillium Web';">
+            <p style="font-size: 2rem; font-weight: bold;">Example - Description</p>
+            <span style="font-size: 1rem; ">Lorem, ipsum., KUNINGAG CITY</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-arrow-right fa-2xl " id="Next" style="color: var(--primary-light); cursor: pointer;"></i>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+<script src="assets/script/mode.js"></script>
+<script src="assets/script/index.js"></script>
+
 </html>
