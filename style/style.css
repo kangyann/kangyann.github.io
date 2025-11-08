@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+   --primary-color: #e4d9ff;
+   --secondary-color: rgb(163, 103, 215);
+   --mint-color: #f0f7f4;
+}
+html {
+   background-color: var(--primary-color);
+}
+*,
+html {
+   padding: 0;
+   margin: 0;
+   font-family: "Inter", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+}
+.container {
+   padding: 12px;
+   margin: 12px;
+}
+.container footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 6px 0px;
+    font-size: 12px;
+    width: 100%;
+}
+.container footer .footer__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+.container footer .footer__box a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.container footer .footer__box a:hover {
+    text-decoration: underline;
+}
+.index__container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 80vh;
+}
+.index__container .box {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   width: 30%;
+   border: 1.5px solid var(--secondary-color);
+   box-shadow: 6px 6px 0.5px 0.5px var(--secondary-color);
+   border-radius: 12px;
+   overflow: hidden;
+}
+.index__container .box .box__header {
+   display: flex;
+   justify-content: center;
+   padding: 6px 0px;
+   border-bottom: 1px solid var(--secondary-color);
+}
+.index__container .box .box__header a {
+   padding: 6px;
+   font-size: 14px;
+   text-decoration: none;
+   background: var(--primary-color);
+   transition: all ease-in;
+   color: var(--secondary-color);
+   transition-duration: 150ms;
+}
+.index__container .box .box__header a:hover {
+   color: var(--secondary-color);
+   font-weight: 600;
+}
+.index__container .box .box__profile {
+   display: flex;
+   padding: 24px;
+   gap: 12px;
+}
+.index__container .box .box__profile .box__profile__image {
+   overflow: hidden;
+   width: 128px;
+   border: 1px solid var(--secondary-color);
+   opacity: 80%;
+   cursor: pointer;
+   height: 128px;
+   border-radius: 100%;
+   transition: all ease-in;
+   transition-duration: 150ms;
+}
+.index__container .box .box__profile .box__profile__image:hover {
+   opacity: 100%;
+}
+.index__container .box .box__profile .box__profile__image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.index__container .box .box__profile .box__profile__description {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+}
+.index__container .box .box__profile .box__profile__description h4 {
+   color: var(--secondary-color);
+   font-size: 24px;
+}
+.index__container .box .box__profile .box__profile__description p {
+   font-size: 14px;
+}
+.index__container .box .box__profile .box__profile__description strong {
+   color: var(--secondary-color);
+}
