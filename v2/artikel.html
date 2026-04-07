@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Recently Articles</title>
+  </head>
+  <style>
+    .article__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+    }
+    .article__container .box {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 30%;
+      border: 1.5px solid var(--secondary-color);
+      box-shadow: 6px 6px 0.5px 0.5px var(--secondary-color);
+      border-radius: 12px;
+      padding: 24px;
+      overflow: hidden;
+    }
+    .article__container .box hr {
+      margin: 12px 0;
+      height: 2px;
+      background-color: var(--secondary-color);
+      border: none;
+    }
+    .article__container .box .card {
+      padding: 16px 24px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #0002;
+      margin-top: 12px;
+      transition: all 300ms ease-out;
+    }
+    .article__container .box .card small#open {
+      background-color: var(--secondary-color);
+      padding: 4px 16px;
+      border-radius: 4px;
+      color: white;
+    }
+    .article__container .box .card:hover {
+      color: white;
+      transform: translateX(12px);
+      background-color: var(--secondary-color);
+      transition: all 300ms ease-out;
+      /* transition-duration: 300ms; */
+    }
+    .article__container .box h1 {
+      font-size: 20px;
+      color: var(--secondary-color);
+    }
+    .article__container .box a small {
+      font-size: 12px;
+      font-style: italic;
+    }
+    .article__container .box a h2 {
+      font-size: 16px;
+    }
+    .article__container .box a {
+      color: var(--secondary-color);
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="article__container">
+        <div class="box">
+          <h1>Recently Articles :</h1>
+          <hr />
+          <a href="/v2/artikel/pemasaran-sesuai-nilai-agama.html" class="card">
+            <div class="">
+              <h2>Pemasaran Sesuai Nilai Agama dan Moral.</h2>
+              <small>07 April 2026</small>
+            </div>
+            <small id="open">Buka Artikel</small>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
